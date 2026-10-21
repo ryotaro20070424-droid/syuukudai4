@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="calc.cpp" />
-    <ClCompile Include="syuukudai4.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="toi10.cpp" />
     <ClCompile Include="toi9.cpp" />
   </ItemGroup>
