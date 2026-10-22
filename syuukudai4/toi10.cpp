@@ -124,18 +124,20 @@ void Janken::Judge(int &winp,int &losep)
     }
 }
 
-void FinalJudge(int winp, int losep)
+void FinalJudge(int winp, int losep,char* name,char* cpuName)
 {
     cout << "===========================" << endl;
     cout << "リザルトは、勝ちが「" << winp << "」回！" << endl
         << "負けが「" << losep << "」回！" << endl;
     if (winp > losep)
     {
-        cout << "あなたの勝ちです!!!" << endl;
+        cout << name << "の勝ちです!!!" << endl
+            << cpuName << "の負け" << endl;
     }
     else
     {
-        cout << "あなたの負けですね　(*´Д｀)ハァ" << endl;
+        cout << name << "の負けですね　(*´Д｀)ハァ" << endl
+            << cpuName << "の勝ち～‼　ィェーィ!!" << endl;
     }
 }
 
@@ -177,7 +179,7 @@ void Janken::Play()
                 Judge(winp, losep);
             } while (playerhand == cpuhand);
         }
-        FinalJudge(winp, losep);
+        FinalJudge(winp, losep,name, cpuName);
         check++;
     }
 }
