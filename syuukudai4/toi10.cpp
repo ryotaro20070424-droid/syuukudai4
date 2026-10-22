@@ -85,6 +85,10 @@ void Player::SelectHand()
         << "グー：0 || チョキ：1 || パー：2" << endl
         << "=>";
     cin >> Hand;
+    if (Hand < 0 || Hand>2)
+    {
+        SelectHand();
+    }
 }
 
 void CPUPlayer::RandHand()
