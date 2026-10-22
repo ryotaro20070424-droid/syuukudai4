@@ -148,7 +148,6 @@ void Janken::Play()
     int check = 0;
     int winp = 0;
     int losep = 0;
-    cout << "じゃんけんゲーム！" << endl;
     while (check == 0)
     {
         int num = 0;
